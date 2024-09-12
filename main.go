@@ -20,7 +20,7 @@ func main() {
 
 	// Start the web service
 	log.Println("Starting web service...")
-	err := http.ListenAndServe("localhost:4242", nil)
+	err := http.ListenAndServe("127.0.0.1:4242", nil)
 
 	if err != nil {
 		log.Fatal(err)
